@@ -7,23 +7,20 @@ let integer=0;
 sub.addEventListener('click', function(a){
     a.preventDefault();
     if (integer>1){
-      integer-=1;  result.innerText=integer;
-        person.innerText=" Person";
+      integer-=1;  
+      
+      result.innerText=integer;
+      person.innerText=" Person";
     return;
-    } else{
-    result.innerText=integer;
-       person.innerText=" Person";
     }
     
 });
 
 add.addEventListener('click', function(b){
-    b.preventDefault();
-    if(integer<1000){
-    integer +=1;
+    b.preventDefault();integer +=1;
     result.innerHTML=integer;
-    person.innerText=" People"
-    return;}
+    
+    return;
 });
 
 let MyName=document.getElementById('name');
